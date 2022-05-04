@@ -1,15 +1,17 @@
 %
-% Copyright (c) 2018, Raviteja Patchava, Yi Hong, and Emanuele Viterbo, Monash University
+% Copyright (c) 2018, Raviteja Patchava, Yi Hong, and Emanuele Viterbo, 
+% Monash University
 % All rights reserved.
 %
 % Redistribution and use in source and binary forms, with or without
-% modification, are permitted provided that the following conditions are met:
+% modification, are permitted provided that the following conditions 
+% are met:
 %
-% 1. Redistributions of source code must retain the above copyright notice, this
-%   list of conditions and the following disclaimer.
-% 2. Redistributions in binary form must reproduce the above copyright notice,
-%   this list of conditions and the following disclaimer in the documentation
-%   and/or other materials provided with the distribution.
+% 1. Redistributions of source code must retain the above copyright notice, 
+% this list of conditions and the following disclaimer.
+% 2. Redistributions in binary form must reproduce the above copyright 
+% notice, this list of conditions and the following disclaimer in the 
+% documentation and/or other materials provided with the distribution.
 %
 %THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 %ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -22,7 +24,8 @@
 %(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 %SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %
-%    - Latest version of this code may be downloaded from: https://ecse.monash.edu/staff/eviterbo/
+%    - Latest version of this code may be downloaded from: 
+% https://ecse.monash.edu/staff/eviterbo/
 %    - Freely distributed for educational and research purposes
 %%
 function [taps,delay_taps,Doppler_taps,chan_coef] = OTFS_channel_gen(N,M)
