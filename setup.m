@@ -1,8 +1,8 @@
 clear; close all; clc;
 
 % import audio file
-fileName = "teste_trabalho.wav";
-[y,Fs] = audioread(filename);
+fileName = "VozEstudio.wav";
+[y,Fs] = audioread(fileName);
 
 % OFDM modulation
 % OTFS modulation
