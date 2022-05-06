@@ -1,14 +1,13 @@
-%% setup
-clear; close all; clc; rng(1);
-addpath("OTFS_sample_code/");
+clear; close all; clc;
+tic; rng(1);
 %% get bytes
 fileName = "VozEstudio.wav";
 fileID = fopen(fileName,"r");
 bytes = fread(fileID);
 fclose(fileID);
 clear fileID;
-%% OTFS parameters
-% number of symbols
+%% OTFS parameters%%%%%%%%%%
+% number of symbol
 N = 8;
 % number of subcarriers
 M = 8;
@@ -26,11 +25,7 @@ SNR_dB = 20:2:20;
 SNR = 10.^(SNR_dB/10);
 noise_var_sqrt = sqrt(1./SNR);
 sigma_2 = abs(eng_sqrt*noise_var_sqrt).^2;
-%% OFDM parameters
-hMod = comm.OFDMModulator(...
-    "NumGuardBandCarriers", [4, 4], ...
-    "NumSymbols", 8);
-%% Modulation
+%%
 N_fram = 10^4;
 err_ber = zeros(length(SNR_dB),1);
 for iesn0 = 1:length(SNR_dB)
